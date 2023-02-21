@@ -23,7 +23,7 @@ start_station.pack()
 end_station1= tk.Label(frame2,text="도착역")
 end_station = tk.Entry(frame2,width=30)
 end_station1.pack()
-end_station.pack()
+end_station.pack(x=0,y=0)
 
 frame3=tk.Frame()
 
