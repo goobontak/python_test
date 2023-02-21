@@ -1,0 +1,45 @@
+import tkinter
+
+window=tkinter.Tk()
+window.title("Frame 연습") 
+window.geometry("500x500")
+img = tkinter.PhotoImage(file="ru1.png")
+bg_img = tkinter.Label(image=img)
+bg_img.pack(expand="True",fill="both")
+
+num_ac = tkinter.Button(width=5,height=2,text="A/C")
+num_ac.place(x=100,y=100)
+num_mul = tkinter.Button(width=5,height=2,text="*")
+num_mul.place(x=200,y=100)
+num_div = tkinter.Button(width=5,height=2,text="/")
+num_div.place(x=300,y=100)
+
+
+num_7 = tkinter.Button(width=5,height=2,text="7")
+num_7.place(x=100,y=150)
+num_8= tkinter.Button(width=5,height=2,text="8")
+num_8.place(x=200,y=150)
+num_9 = tkinter.Button(width=5,height=2,text="9")
+num_9.place(x=300,y=150)
+num_minus= tkinter.Button(width=5,height=2,text="-")
+num_minus.place(x=400,y=150)
+
+num_4 = tkinter.Button(width=5,height=2,text="4")
+num_4.place(x=100,y=200)
+num_5 = tkinter.Button(width=5,height=2,text="5")
+num_5.place(x=200,y=200)
+num_6= tkinter.Button(width=5,height=2,text="6")
+num_6.place(x=300,y=200)
+num_plus= tkinter.Button(width=5,height=2,text="+")
+num_plus.place(x=400,y=200)
+
+num_1 = tkinter.Button(width=5,height=2,text="1")
+num_1.place(x=100,y=250)
+num_2 = tkinter.Button(width=5,height=2,text="2")
+num_2.place(x=200,y=250)
+num_3 = tkinter.Button(width=5,height=2,text="3")
+num_3.place(x=300,y=250)
+num_eq = tkinter.Button(width=5,height=2,text="=")
+num_eq.place(x=400,y=250)
+
+window.mainloop()

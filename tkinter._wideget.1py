@@ -1,0 +1,20 @@
+import tkinter
+
+window = tkinter.Tk()
+
+w=400
+h=200
+px=700
+py=100
+
+window.geometry("{}x{}+{}+{}".format(w,h,px,py))
+window.resizable(False,False)
+window.title("wideget 연습")
+
+bt_1= tkinter.Button(window,width=10,height=3,text="첫번째")
+bt_2= tkinter.Button(window,width=10,height=3,text="두번째")
+bt_3= tkinter.Button(window,width=10,height=3,text="세번째")
+bt_1.pack(side="left",)
+bt_2.pack(side="right",fill="x")
+bt_3.pack(side="bottom",fill="x")
+window.mainloop()
